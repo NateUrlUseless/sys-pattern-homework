@@ -13,7 +13,7 @@ sudo adduser cryptouser
 su - cryptouser
 ```
 
-![1](https://github.com/NateUrlUseless/sys-pattern-homework/tree/main/img/111.png)
+![1](https://github.com/NateUrlUseless/sys-pattern-homework/blob/main/img/111.png)
 
 Зашифруем содержимое каталога:
 
