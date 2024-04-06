@@ -22,7 +22,7 @@ sudo ecryptfs-migrate-home -u cryptouser
 sudo ls -la /home/cryptouser
 ```
 
-![2](https://github.com/NateUrlUseless/sys-pattern-homework/tree/main/img/333.png)
+![2](https://github.com/NateUrlUseless/sys-pattern-homework/blob/main/img/333.png)
 ### Задание 2 
 
 Установим поддержку luks:
@@ -31,7 +31,7 @@ sudo ls -la /home/cryptouser
 sudo apt install cryptsetup -y
 ```
 
-![3](https://github.com/NateUrlUseless/sys-pattern-homework/tree/main/img/444.png)
+![3](https://github.com/NateUrlUseless/sys-pattern-homework/blob/main/img/444.png)
 
 Создадим новый раздел размером 100 МБ с помощью утилиты gparted:
 
@@ -39,7 +39,7 @@ sudo apt install cryptsetup -y
 sudo apt install gparted -y
 sudo gparted
 ```
-![4](https://github.com/NateUrlUseless/sys-pattern-homework/tree/main/img/666.png)
+![4](https://github.com/NateUrlUseless/sys-pattern-homework/blob/main/img/666.png)
 
 Зададим тип файловой системы - luks2 для раздела /dev/sdb1:
 
@@ -47,7 +47,7 @@ sudo gparted
 sudo cryptsetup -y -v --type luks2 luksFormat /dev/sdb1
 ```
 
-![5](https://github.com/NateUrlUseless/sys-pattern-homework/tree/main/img/777.png)
+![5](https://github.com/NateUrlUseless/sys-pattern-homework/blob/main/img/777.png)
 
 Смонтируем раздел:
 ```
@@ -55,7 +55,7 @@ sudo cryptsetup luksOpen /dev/sdb1 luks_disk
 ls /dev/mapper/disk
 ```
 
-![6](https://github.com/NateUrlUseless/sys-pattern-homework/tree/main/img/888.png)
+![6](https://github.com/NateUrlUseless/sys-pattern-homework/blob/main/img/888.png)
 
 Отформатируем раздел:
 
